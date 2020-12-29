@@ -2,7 +2,7 @@ body {
     background:white;
   color: black;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 600px;
+    max-width: 500px;
     margin-left: 20px;
     font-weight:500;
   font-size: 16px;
@@ -12,7 +12,7 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-p {max-width: 600px;}
+p {max-width: 500px;}
 h2 {
   color: steelblue;
 }
@@ -102,12 +102,12 @@ list-style: none;
     padding: 0;
     }
 
-img {margin: auto; width: 100%; max-width: 700px; margin-top: 0px; border-radius: 0px 0px 10px 10px;}
+img {margin: auto; width: 100%; max-width: 700px; margin-top: 0px; border-radius: 0px 0px 0px 10px;}
 .pic1
 {width: 100%; max-width: 700px; vertical-align: top; margin: 0px; display: inline-block;
 }
 .pic2
-{width: 100%; max-width: 700px; vertical-align: top; margin: 0px; display: inline-block;
+{width: 100%; max-width: 500px; vertical-align: top; margin: 0px; display: inline-block;
 }
 /* Clear floats after image containers */
 .row::after {
