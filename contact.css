@@ -1,0 +1,207 @@
+body{font-family: Helvetica, sans-serif;}
+
+    
+}
+
+.wrap {margin: 0 auto;
+    width: 100px;}
+/* header */
+
+.header {
+  background-color: white;
+  position: relative;
+    width: 100%;
+  max-width: 650px;
+  z-index: 3;
+    margin: 0 auto;
+     
+  /*margin-left: 10px;
+  margin-right: 10px;*/
+}
+
+.header ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+    color: green;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 13px 0px 0px 0px;
+  text-decoration: none;
+    color: green;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+.footer
+{text-decoration: none; text-align: left; font-family: Helvetica, sans-serif; font-size: 16px; width: 100%; max-width: 650px; margin: 10px; margin: 0 auto }
+
+hr.style1 {
+    border: 2px;
+    border-bottom: 1px solid grey;
+    margin: 10px 0px 0px 10px;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 28px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 28px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 8px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -8px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/* 48em = 768px */
+
+/*@media (min-width: 768px;)
+    
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+    font-size: 14px;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
